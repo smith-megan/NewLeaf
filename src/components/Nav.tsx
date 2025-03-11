@@ -3,7 +3,7 @@
 function Nav() {
   return (
     <>
-      <div>Nav</div>
+      <div className="bg-black text-white">Nav</div>
     </>
   )
 }
