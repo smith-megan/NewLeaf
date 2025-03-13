@@ -1,6 +1,7 @@
 // import { useState } from "react"
 import Nav from "./components/Nav"
 import Home from "./components/Home"
+import Footer from "./components/Footer"
 import { Analytics } from "@vercel/analytics/react"
 import "./App.css"
 
@@ -12,6 +13,7 @@ function App() {
       <Analytics />
       <Nav />
       <Home />
+      <Footer />
     </>
   )
 }

@@ -36,7 +36,7 @@ function Home() {
           backgroundBlendMode: "overlay",
         }}
       >
-        <div className="grid gap-4 p-5 pt-10 place-items-center text-black">
+        <div className="grid gap-4 p-5 pt-12 pb-15 place-items-center text-black">
           <h1 className="font-work font-[400]">
             Welcome to New Leaf Furniture
           </h1>
@@ -62,29 +62,30 @@ function Home() {
       </div>
       <div>
         <div className="bg-white text-black">
-          <div className="grid grid-cols-1 place-items-center">
+          <div className="grid grid-cols-1 place-items-center gap-2 p-3">
             <img
-              className="rounded-lg w-1/2"
+              className="rounded-lg w-3/5"
               src={wood}
               alt="Wood stack of lumber"
             />
-            <h2>Blog & Tutorials +</h2>
+            <h2 className="font-[400]">Blog & Tutorials +</h2>
           </div>
-          <div>
+          <div className="grid grid-cols-1 place-items-center gap-2 p-3">
+            {" "}
             <img
-              className="rounded-lg p-4"
+              className="rounded-lg w-3/5"
               src={table}
               alt="Wood industrial style table"
             />
-            <h2>Inspiration +</h2>
+            <h2 className="font-[400]">Inspiration +</h2>
           </div>
-          <div>
+          <div className="grid grid-cols-1 place-items-center gap-2 p-3">
             <img
-              className="rounded-lg p-4"
+              className="rounded-lg w-3/5"
               src={roundtable}
               alt="Small round wood table"
             />
-            <h2>Shop +</h2>
+            <h2 className="font-[400]">Shop +</h2>
           </div>
         </div>
       </div>
