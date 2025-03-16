@@ -1,4 +1,5 @@
 // import { useState } from "react"
+import { Link } from "react-router"
 import grain from "../assets/grain.jpg"
 import trees from "../assets/trees.jpg"
 import table from "../assets/table.jpg"
@@ -19,12 +20,15 @@ function Home() {
           </h2>
         </div>
         <div
-          className="grid w-full h-full rounded-none sm:rounded-l-lg p-10 pl-6 pb-40 bg-cover bg-center align-left"
+          className="grid w-full h-full rounded-none sm:rounded-l-lg p-10 pl-6 pb-40 bg-contain bg-center align-left"
           style={{ backgroundImage: `url(${grain})` }}
         >
-          <button className="p-2 bg-white text-black font-work font-[400] w-1/2">
+          <Link
+            to="/gallery"
+            className="p-2 bg-white text-black font-work font-[400] w-1/2"
+          >
             View the Gallery
-          </button>
+          </Link>
         </div>
       </div>
       <div
