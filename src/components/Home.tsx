@@ -13,23 +13,22 @@ function Home() {
   return (
     <>
       <div className="grid bg-black text-white pt-40">
-        <div className="text-3xl text-left p-6">
+        <div className="text-3xl text-left p-6 grid gap-1">
           <h1 className="font-forum font-[300] text-6xl">New Leaf Furniture</h1>
-          <h2 className="font-work text-xl pt-6">
+          <h2 className="font-work text-xl pt-6 pb-3">
             Creative Refinishing and Custom Wood Working
           </h2>
-        </div>
-        <div
-          className="grid w-full h-full rounded-none sm:rounded-l-lg p-10 pl-6 pb-40 bg-contain bg-center align-left"
-          style={{ backgroundImage: `url(${grain})` }}
-        >
           <Link
             to="/gallery"
-            className="p-2 bg-white text-black font-work font-[400] w-1/2"
+            className="p-4 bg-white text-black font-work text-lg font-[400]"
           >
             View the Gallery
           </Link>
         </div>
+        <div
+          className="grid w-full h-full rounded-none sm:rounded-l-lg p-10 pl-6 pb-40 bg-contain bg-center align-left"
+          style={{ backgroundImage: `url(${grain})` }}
+        ></div>
       </div>
       <div
         className="bg-cover bg-top text-black;
@@ -52,12 +51,18 @@ function Home() {
             grow.
           </p>
           <div className="grid gap-5 pt-4 w-1/2">
-            <button className="p-2 bg-white text-black font-work font-[400]">
+            <Link
+              to="/gallery"
+              className="p-2 bg-white text-black font-work font-[400]"
+            >
               Gallery
-            </button>
-            <button className="p-2 bg-black text-white font-work font-[400]">
+            </Link>
+            <Link
+              to="/tutorials"
+              className="p-2 bg-black text-white font-work font-[400]"
+            >
               Learning
-            </button>
+            </Link>
           </div>
         </div>
         <div className="bg-white rounded-t-lg text-black p-6">
@@ -65,14 +70,16 @@ function Home() {
         </div>
       </div>
       <div>
-        <div className="bg-white text-black">
+        <div className="bg-white text-black grid grid-cols-[repeat(3,minmax(100px,600px))]">
           <div className="grid grid-cols-1 place-items-center gap-2 p-3">
             <img
               className="rounded-lg w-3/5"
               src={wood}
               alt="Wood stack of lumber"
             />
-            <h2 className="font-[400]">Blog & Tutorials +</h2>
+            <Link to="/tutorials" className="font-[400]">
+              Blog & Tutorials +
+            </Link>
           </div>
           <div className="grid grid-cols-1 place-items-center gap-2 p-3">
             {" "}
@@ -81,7 +88,9 @@ function Home() {
               src={table}
               alt="Wood industrial style table"
             />
-            <h2 className="font-[400]">Inspiration +</h2>
+            <Link to="/gallery" className="font-[400] text-black">
+              Inspiration +
+            </Link>
           </div>
           <div className="grid grid-cols-1 place-items-center gap-2 p-3">
             <img
@@ -89,7 +98,9 @@ function Home() {
               src={roundtable}
               alt="Small round wood table"
             />
-            <h2 className="font-[400]">Shop +</h2>
+            <Link to="/shop" className="font-[400]">
+              Shop +
+            </Link>
           </div>
         </div>
       </div>
