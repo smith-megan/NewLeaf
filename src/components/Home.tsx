@@ -70,7 +70,7 @@ function Home() {
         </div>
       </div>
       <div>
-        <div className="bg-white text-black grid grid-cols-[repeat(3,minmax(100px,600px))]">
+        <div className="bg-white text-black grid sm:grid-cols-3">
           <div className="grid grid-cols-1 place-items-center gap-2 p-3">
             <img
               className="rounded-lg w-3/5"

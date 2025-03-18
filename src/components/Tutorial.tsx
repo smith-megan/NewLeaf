@@ -22,13 +22,33 @@ function Tutorial() {
       </div>
       <div className="grid p-3 gap-2 bg-white text-black">
         <h2 className="text-left">Posts</h2>
-        <div className="grid grid-cols-auto grid-flow-cols">
-          <div className="w-3/5">
-            <img src={grain} className="w-full" />
-            <h2 className="text-left">Title</h2>
+        <div className="grid grid-cols-auto sm:grid-cols-3 sm:gap-4 gap-2 place-content-center">
+          <div className="grid place-content-center p-0">
+            <img
+              src={grain}
+              className="rounded-3xl overflow-hidden object-cover h-[150px] w-[100vw] place-self-center"
+            />
+            <h2 className="text-left font-forum text-3xl pt-3">Title</h2>
+            <p className="text-left">Small blurb description</p>
           </div>
-          <p>grid</p>
-          <p>grid</p>
+          <div className="grid place-content-center p-0">
+            <img
+              src={grain}
+              className="rounded-3xl overflow-hidden object-cover h-[150px] w-[100vw] place-self-center"
+            />
+            <h2 className="text-left font-forum text-3xl pt-3">Title</h2>
+            <p className="text-left">Small blurb description</p>
+          </div>
+          <div className="grid place-content-center">
+            <img
+              src={grain}
+              className="rounded-3xl overflow-hidden object-cover h-[150px] w-[100vw] place-self-center"
+            />
+            <h2 className="text-left font-forum text-3xl pt-3">Title</h2>
+            <p className="text-left">
+              Small blurb description that is annoyingly longer
+            </p>
+          </div>
         </div>
       </div>
     </>
