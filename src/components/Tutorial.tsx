@@ -19,7 +19,7 @@ function Tutorial() {
               Informative step by steps for your refinishing journey
             </p>
           </div>
-          <button>Beginners path</button>
+          {/* <button>Beginners path</button> */}
         </div>
       </div>
       <div className="grid p-3 gap-2 bg-white text-black">

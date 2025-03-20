@@ -12,21 +12,21 @@ function Home() {
 
   return (
     <>
-      <div className="grid bg-black text-white pt-40">
-        <div className="text-3xl text-left p-6 grid gap-1">
+      <div className="grid bg-black text-white sm:grid-cols-3">
+        <div className="text-3xl text-left pl-6 pb-7 grid gap-3 pt-60 sm:col-span-2">
           <h1 className="font-forum font-[300] text-6xl">New Leaf Furniture</h1>
-          <h2 className="font-work text-xl pt-6 pb-3">
+          <h2 className="font-work text-xl pt-3 pb-3">
             Creative Refinishing and Custom Wood Working
           </h2>
           <Link
             to="/gallery"
-            className="p-4 bg-white text-black font-work text-lg font-[400]"
+            className="p-4 bg-white text-black font-work text-lg font-[400] sm:w-1/2 text-center sm:text-left"
           >
             View the Gallery
           </Link>
         </div>
         <div
-          className="grid w-full h-full rounded-none sm:rounded-l-lg p-10 pl-6 pb-40 bg-contain bg-center align-left"
+          className="grid w-full h-full rounded-none sm:rounded-l-lg p-10 pb-40 sm:bg-cover bg-contain bg-center align-left"
           style={{ backgroundImage: `url(${grain})` }}
         ></div>
       </div>
@@ -93,6 +93,17 @@ function Home() {
             </Link>
           </div>
           <div className="grid grid-cols-1 place-items-center gap-2 p-3">
+            {" "}
+            <img
+              className="rounded-lg w-3/5"
+              src={roundtable}
+              alt="Wood industrial style table"
+            />
+            <Link to="/about" className="font-[400] text-black">
+              About +
+            </Link>
+          </div>
+          {/* <div className="grid grid-cols-1 place-items-center gap-2 p-3">
             <img
               className="rounded-lg w-3/5"
               src={roundtable}
@@ -101,7 +112,7 @@ function Home() {
             <Link to="/shop" className="font-[400]">
               Shop +
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

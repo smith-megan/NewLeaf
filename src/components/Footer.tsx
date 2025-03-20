@@ -17,6 +17,8 @@ function Footer() {
         <div className="grid grid-flow-col">
           <Link to="/gallery">Gallery</Link>
           <Link to="/tutorials">Tutorials</Link>
+          <Link to="/about">About</Link>
+
           {/* <Link to="/shop">Shop</Link> */}
         </div>
       </div>

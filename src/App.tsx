@@ -4,6 +4,7 @@ import Nav from "./components/Nav"
 import Home from "./components/Home"
 import Tutorial from "./components/Tutorial"
 import Gallery from "./components/Gallery"
+import About from "./components/About"
 import Footer from "./components/Footer"
 import { Analytics } from "@vercel/analytics/react"
 import "./App.css"
@@ -18,6 +19,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/tutorials" element={<Tutorial />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
       </BrowserRouter>
