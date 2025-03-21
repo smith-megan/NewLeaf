@@ -21,8 +21,10 @@ const Tutorialone = {
 
   3: [
     [image3],
-    "Each grit of sandpaper is essentially grinding, cutting and eating away wood fibers at different depths. An 60 grit sandpaper has quite aggressive teeth and will bite deeply and quickly!",
-    "If it's a delicate piece starting at 120 and doing a slow pass can give you information to move forward.",
+    [
+      "Each grit of sandpaper is essentially grinding, cutting and eating away wood fibers at different depths. An 60 grit sandpaper has quite aggressive teeth and will bite deeply and quickly!",
+      "If it's a delicate piece starting at 120 and doing a slow pass can give you information to move forward.",
+    ],
   ],
 }
 
