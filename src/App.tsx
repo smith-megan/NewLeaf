@@ -8,6 +8,7 @@ import About from "./components/About"
 import Footer from "./components/Footer"
 import { Analytics } from "@vercel/analytics/react"
 import "./App.css"
+import PostOne from "./components/posts/post1/Postone"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/tutorials" element={<Tutorial />} />
+          <Route path="/sand" element={<PostOne />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />
         </Routes>
