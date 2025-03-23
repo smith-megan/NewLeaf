@@ -12,21 +12,18 @@ function PostOne() {
         </div>
       </div>
       <div className="grid p-3 gap-2 bg-white text-black">
-        <div className="grid grid-cols-auto gap-5 p-5 justify content-start">
+        <div className="flex flex-col p-5 justify content-start">
           {Object.values(Tutorialone).map((value, i) => (
-            <div
-              className="grid grid-cols-auto gap-3 sm:grid-cols-3"
-              key={"tutorialone-div" + i}
-            >
+            <div className="flex p-5" key={"tutorialone-div" + i}>
               <img
                 src={value[0][0]}
                 className="rounded-3xl overflow-hidden object-cover sm:h-[50vh] h-[30vh] w-full place-self-center"
               />
-              <div className="sm:col-span-2 grid gap-5">
+              <div className="flex flex-col">
                 {value[1].map((item, index) => {
                   return (
                     <p
-                      className="text-left pl-0.5 font-work text-black"
+                      className="text-left pl-2 pt-5 font-work text-black"
                       key={"Paragraph" + i + index}
                     >
                       {item}

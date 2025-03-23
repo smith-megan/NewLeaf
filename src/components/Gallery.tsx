@@ -27,7 +27,7 @@ function Gallery() {
             <div key={"gallery" + i}>
               <img
                 src={value[0]}
-                className="rounded-3xl overflow-hidden object-cover h-[150px] w-[100vw] place-self-center"
+                className="rounded-3xl overflow-hidden object-cover h-[40vh] w-[100vw] place-self-center"
               />
               <h2 className="text-left font-forum text-2xl pt-2 pl-0.5">
                 {value[1]}
