@@ -34,8 +34,20 @@ function Tutorial() {
               <h2 className="text-left font-forum text-2xl pt-2 pl-0.5">
                 {value[1]}
               </h2>
-              <p className="text-left pl-0.5">{value[2]}</p>
-              {value[3] ? <Link to={value[3]}>test</Link> : ""}
+              <p className="grid gap-2 text-left pl-0.5">
+                {value[2]}
+
+                {value[3] ? (
+                  <Link
+                    to={value[3]}
+                    className="text-left text-white bg-black w-1/2 p-1"
+                  >
+                    Read more {">"}
+                  </Link>
+                ) : (
+                  ""
+                )}
+              </p>
             </div>
           ))}
         </div>
