@@ -1,10 +1,10 @@
 import image1 from "../../../assets/tutorialphoto/one/PXL_20250305_223708308.MP.jpg"
 import image2 from "../../../assets/tutorialphoto/one/PXL_20250306_205836586.MP.jpg"
-import image3 from "../../../assets/tutorialphoto/one/wood.jpg"
+import image3 from "../../../assets/tutorialphoto/one/PXL_20230410_182256693.MP.jpg"
 
 const Tutorialone = {
   1: {
-    images: [image1],
+    images: [image2, image1],
     header: "Before you start",
     paragraphs: [
       "Before you touch a sheet of sandpaper it is first important to really look at what you are working with. Medium Density Fiberboard (MDF) will never sand down into a smooth clean woodgrain!",
@@ -12,7 +12,7 @@ const Tutorialone = {
     ],
   },
   2: {
-    images: [image2, image3],
+    images: [image3],
     header: "A word of caution",
     paragraphs: [
       "Now if you've scraped or stripped that thick outer layer, it's finally time to sand, but no matter the project start cautiously! You can always sand more, but you can't sand less.",
@@ -22,7 +22,7 @@ const Tutorialone = {
   },
 
   3: {
-    images: [image3, image2, image1],
+    images: [],
     header: "The paper grits",
     paragraphs: [
       "Each grit of sandpaper is essentially grinding, cutting and eating away wood fibers at different depths. An 60 grit sandpaper has quite aggressive teeth and will bite deeply and quickly!",
