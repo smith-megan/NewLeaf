@@ -14,13 +14,13 @@ function Home() {
     <>
       <div className="grid bg-black text-white sm:grid-cols-3">
         <div className="text-3xl text-left pl-6 pb-7 grid gap-3 pt-60 sm:col-span-2">
-          <h1 className="font-forum font-[300] text-6xl">New Leaf Furniture</h1>
-          <h2 className="font-work text-xl pt-3 pb-3">
+          <h1 className="font-forum font-[300] text-4xl">New Leaf Furniture</h1>
+          <h2 className="font-work text-lg pt-3 pb-3">
             Creative Refinishing and Custom Wood Working
           </h2>
           <Link
             to="/gallery"
-            className="p-4 bg-white text-black font-work text-lg font-[400] sm:w-1/2 text-center sm:text-left"
+            className="p-3 bg-white text-black font-work text-lg font-[400] sm:w-1/2 text-center sm:text-left"
           >
             View the Gallery
           </Link>

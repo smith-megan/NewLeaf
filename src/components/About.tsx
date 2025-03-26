@@ -10,7 +10,7 @@ function About() {
   return (
     <>
       <div
-        className="bg-cover bg-top text-black;
+        className="bg-cover bg-top text-black w-full
 "
         style={{
           backgroundImage: `url(${sky})`,

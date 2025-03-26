@@ -1,3 +1,4 @@
+import { Link } from "react-router"
 import grain from "../assets/grain.jpg"
 import Tutoriallist from "./posts/Tutoriallist"
 
@@ -24,8 +25,8 @@ function Tutorial() {
       </div>
       <div className="grid p-3 gap-2 bg-white text-black">
         <div className="grid grid-cols-auto sm:grid-cols-3 sm:gap-4 gap-2 justify content-start">
-          {Object.values(Tutoriallist).map((value) => (
-            <div>
+          {Object.values(Tutoriallist).map((value, i) => (
+            <div key={`tutorial+${i}`}>
               <img
                 src={value[0]}
                 className="rounded-3xl overflow-hidden object-cover h-[150px] w-[100vw] place-self-center"
@@ -33,7 +34,20 @@ function Tutorial() {
               <h2 className="text-left font-forum text-2xl pt-2 pl-0.5">
                 {value[1]}
               </h2>
-              <p className="text-left pl-0.5">{value[2]}</p>
+              <p className="grid gap-2 text-left pl-0.5">
+                {value[2]}
+
+                {value[3] ? (
+                  <Link
+                    to={value[3]}
+                    className="text-left text-white bg-black w-1/2 p-1"
+                  >
+                    Read more {">"}
+                  </Link>
+                ) : (
+                  ""
+                )}
+              </p>
             </div>
           ))}
         </div>
