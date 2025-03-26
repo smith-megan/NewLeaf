@@ -12,16 +12,16 @@ function PostOne() {
         </div>
       </div>
       <div className="grid sm:p-3 gap-2 bg-white text-black">
-        <div className="flex flex-col sm:p-5 justify content-start">
+        <div className="flex flex-col sm:p-5">
           {Object.values(Tutorialone).map((value, i) => (
             <div className="flex flex-col p-5" key={"tutorialone-div" + i}>
-              <div className="flex flex-row">
+              <div className="flex flex-row justify-around w-full">
                 {value.images.map((img) => {
                   return (
                     <img
                       key={"key" + img}
                       src={img}
-                      className="rounded-3xl overflow-hidden object-cover sm:h-[50vh] h-[30vh] w-full place-self-center p-2"
+                      className="rounded-3xl overflow-hidden object-cover sm:h-[60vh] h-[40vh] min-w-2 place-self-center p-2"
                     />
                   )
                 })}
