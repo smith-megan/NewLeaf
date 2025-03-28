@@ -45,7 +45,7 @@ function Tutorial() {
                     Read more {">"}
                   </Link>
                 ) : (
-                  ""
+                  <></>
                 )}
               </p>
             </div>
