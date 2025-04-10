@@ -1,9 +1,42 @@
 import grain from "../assets/grain.jpg"
 import Gallerylist from "./showroom/Showroomlist"
+import { useState } from "react"
 
 function Gallery() {
+  const [Visible, setVisible] = useState(false)
+  const [Gallery, setGallery] = useState({
+    images: ["image"],
+    header: "header",
+    blurb: "blurb",
+  })
+
   return (
     <>
+      {Visible === true ? (
+        <div className="fixed grid w-[80%] left-[50%] translate-x-[-50%] p-5 pt-4 bg-white text-black">
+          <div className="flex justify-around align-middle pb-2">
+            <div className="w-[85%]">
+              <h1 className="font-forum text-xl">{Gallery.header}</h1>
+              <p className="font-work text-sm">{Gallery.blurb}</p>
+            </div>
+            <button
+              className="w-5 h-7 bg-black text-white justify-self-end p-0"
+              onClick={() => {
+                setVisible(false)
+              }}
+            >
+              X
+            </button>
+          </div>
+          <div className="grid grid-cols-3 gap-5">
+            {Gallery.images.map((img) => {
+              return <img className="w-40" src={img} />
+            })}
+          </div>
+        </div>
+      ) : (
+        <></>
+      )}
       <div className="grid grid-cols-auto grid-flow-row bg-black text-white pt-4">
         <div className="grid grid-cols-auto grid-flow-cols">
           <div
@@ -26,15 +59,21 @@ function Gallery() {
           {Object.values(Gallerylist)
             .reverse()
             .map((value, i) => (
-              <div key={"gallery" + i}>
+              <div
+                key={"gallery" + i}
+                onClick={() => {
+                  setGallery(value)
+                  setVisible(true)
+                }}
+              >
                 <img
-                  src={value[0]}
+                  src={value.images[0]}
                   className="rounded-3xl overflow-hidden object-cover h-[40vh] w-[100vw] place-self-center"
                 />
                 <h2 className="text-left font-forum text-2xl pt-2 pl-0.5">
-                  {value[1]}
+                  {value.header}
                 </h2>
-                <p className="text-left pl-0.5">{value[2]}</p>
+                <p className="text-left pl-0.5">{value.blurb}</p>
               </div>
             ))}
         </div>
