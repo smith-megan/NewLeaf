@@ -1,13 +1,14 @@
 import grain from "../assets/grain.jpg"
 import Gallerylist from "./showroom/Showroomlist"
 import { useState } from "react"
+import { PieceInterface } from "./showroom/Showroomlist"
 
 function Gallery() {
   const [Visible, setVisible] = useState(false)
-  const [Gallery, setGallery] = useState({
-    images: ["image"],
-    header: "header",
-    blurb: "blurb",
+  const [Gallery, setGallery] = useState<PieceInterface>({
+    images: ["imagefiller"],
+    header: "Blue and Cream Tall Dresser",
+    blurb: "The first dresser I ever painted.",
   })
 
   return (
@@ -28,9 +29,9 @@ function Gallery() {
               X
             </button>
           </div>
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid grid-cols-3 gap-2">
             {Gallery.images.map((img) => {
-              return <img className="w-40" src={img} />
+              return <img key={img} className="w-40" src={img} />
             })}
           </div>
         </div>
@@ -56,26 +57,24 @@ function Gallery() {
       </div>
       <div className="grid p-3 gap-2 bg-white text-black">
         <div className="grid grid-cols-auto sm:grid-cols-3 sm:gap-4 gap-2 justify content-start">
-          {Object.values(Gallerylist)
-            .reverse()
-            .map((value, i) => (
-              <div
-                key={"gallery" + i}
-                onClick={() => {
-                  setGallery(value)
-                  setVisible(true)
-                }}
-              >
-                <img
-                  src={value.images[0]}
-                  className="rounded-3xl overflow-hidden object-cover h-[40vh] w-[100vw] place-self-center"
-                />
-                <h2 className="text-left font-forum text-2xl pt-2 pl-0.5">
-                  {value.header}
-                </h2>
-                <p className="text-left pl-0.5">{value.blurb}</p>
-              </div>
-            ))}
+          {Gallerylist.toReversed().map((value, i) => (
+            <div
+              key={"gallery" + i}
+              onClick={() => {
+                setGallery(value)
+                setVisible(true)
+              }}
+            >
+              <img
+                src={value.images[0]}
+                className="rounded-3xl overflow-hidden object-cover h-[40vh] w-[100vw] place-self-center"
+              />
+              <h2 className="text-left font-forum text-2xl pt-2 pl-0.5">
+                {value.header}
+              </h2>
+              <p className="text-left pl-0.5">{value.blurb}</p>
+            </div>
+          ))}
         </div>
       </div>
     </>

@@ -62,94 +62,100 @@ import p3 from "../../assets/showroomphoto/p-3.jpg"
 
 import q from "../../assets/showroomphoto/q.jpg"
 
-const Gallerylist = {
-  1: {
+export interface PieceInterface {
+  images: Array<string>
+  header: string
+  blurb: string
+}
+
+const Gallerylist: Array<PieceInterface> = [
+  {
     images: [a],
     header: "Blue and Cream Tall Dresser",
     blurb: "The first dresser I ever painted.",
   },
-  2: {
+  {
     images: [b, b1, b2],
     header: "Small Wildflower Nightstand",
     blurb: "Experimenting with color combinations and a freehand design",
   },
-  3: {
+  {
     images: [c, c1],
     header: "The Long White Dresser",
     blurb: "Cream and wood grain together",
   },
-  4: {
+  {
     images: [d, d1, d2, d3, d4],
     header: "Mahogany Coffee Tables",
     blurb: "Challenging pair of Mahogany coffee tables",
   },
-  5: {
+  {
     images: [e, e1, e2, e3, e4],
     header: "Blue and Rose Record table",
     blurb: "A beautiful piece and first test of custom stencil",
   },
-  6: {
+  {
     images: [f],
     header: "Jasmine table",
     blurb: "A round table with Jasmine flower stencil experiment",
   },
-  7: {
+  {
     images: [g, g1, g2, g3, g4],
     header: "The Heirloom Vanity",
     blurb: "The most challenging and rewarding restoration I've ever done",
   },
-  8: {
+  {
     images: [h, h1],
     header: "Simple Round Green Table",
     blurb: "Sometimes simple is what is needed",
   },
-  9: {
+  {
     images: [i, i1, i2],
     header: "Small Scarf Drawers",
     blurb: "Charming and simple set",
   },
-  10: {
+  {
     images: [j, j1, j2],
     header: "Green and Gold",
     blurb: "Deep green with hand-drawn details and gold pull",
   },
-  11: {
+  {
     images: [k],
     header: "Perfect Little Blue",
     blurb: "A favorite charming transformation",
   },
-  12: {
+  {
     images: [l, l1, l2],
     header: "Desk to Academia Nighstands",
     blurb: "Splitting a desk into something new and charming",
   },
-  13: {
+  {
     images: [m, m1, m2],
     header: "Green Woodsy Dresser",
     blurb: "A sweet combination with a combination of wood and paint",
   },
-  14: {
+  {
     images: [n, n1, n2],
     header: "Classical Purple",
     blurb: "A two drawer table with fun stencil interest",
   },
-  15: {
+  {
     images: [o, o1],
     header: "Black, White and Gold",
     blurb: "A tall table with a splashing gold accent",
   },
-  16: {
+  {
     images: [p, p1, p2, p3],
     header: "Misty Jewelry Box",
     blurb:
       "A magical box to add a touch of mystery to the treasures stored inside",
   },
-  17: {
+  {
     images: [q],
     header: "The Black Dresser",
     blurb:
       "This was the biggest challenge and transformational furniture rescue I have ever been able to complete",
   },
-}
+]
 
 export default Gallerylist
