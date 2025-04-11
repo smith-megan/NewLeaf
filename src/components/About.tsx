@@ -24,8 +24,7 @@ function About() {
             The Goals of New Leaf furniture
           </h2>
           <p className="font-[400]">
-            The goal of our company is to provide inspiration, information and
-            tools.
+            Here to provide inspiration, information and tools.
           </p>
           <p className="font-[400]">
             Furniture restoration and woodworking is a creative experiment and
