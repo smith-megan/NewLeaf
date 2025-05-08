@@ -62,6 +62,10 @@ import p3 from "../../assets/showroomphoto/p-3.jpg"
 
 import q from "../../assets/showroomphoto/q.jpg"
 
+import r from "../../assets/showroomphoto/r.jpg"
+import r1 from "../../assets/showroomphoto/r-1.jpg"
+import r2 from "../../assets/showroomphoto/r-2.jpg"
+
 export interface PieceInterface {
   images: Array<string>
   header: string
@@ -155,6 +159,11 @@ const Gallerylist: Array<PieceInterface> = [
     header: "The Black Dresser",
     blurb:
       "This was the biggest challenge and transformational furniture rescue I have ever been able to complete",
+  },
+  {
+    images: [r, r1, r2],
+    header: "Gingko Art Nouveau",
+    blurb: "A delicately curved wood side table with gold accent",
   },
 ]
 
