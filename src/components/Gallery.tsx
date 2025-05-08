@@ -16,7 +16,7 @@ function Gallery() {
       {Visible === true ? (
         <div className="fixed grid w-[80%] left-[50%] translate-x-[-50%] p-5 pt-4 bg-white text-black">
           <div className="flex justify-around align-middle pb-2">
-            <div className="w-[85%]">
+            <div className="w-[100%]">
               <h1 className="font-forum text-xl">{Gallery.header}</h1>
               <p className="font-work text-sm">{Gallery.blurb}</p>
             </div>
@@ -29,7 +29,7 @@ function Gallery() {
               X
             </button>
           </div>
-          <div className="grid grid-cols-3 gap-2">
+          <div className="grid grid-cols-3 gap-2 justify-items-center">
             {Gallery.images.map((img) => {
               return <img key={img} className="w-40" src={img} />
             })}
@@ -59,6 +59,7 @@ function Gallery() {
         <div className="grid grid-cols-auto sm:grid-cols-3 sm:gap-4 gap-2 justify content-start">
           {Gallerylist.toReversed().map((value, i) => (
             <div
+              className="cursor-pointer"
               key={"gallery" + i}
               onClick={() => {
                 setGallery(value)

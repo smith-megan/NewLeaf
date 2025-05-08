@@ -13,7 +13,7 @@ function PostOne() {
       </div>
       <div className="grid sm:p-3 gap-2 bg-white text-black">
         <div className="flex flex-col sm:p-5">
-          {Object.values(Tutorialone).map((value, i) => (
+          {Tutorialone.map((value, i) => (
             <div className="flex flex-col p-5" key={"tutorialone-div" + i}>
               <div className="flex flex-row justify-around w-full">
                 {value.images.map((img) => {
