@@ -1,8 +1,10 @@
 import TutorialThree from "./TutorialThree"
+import ScrollToTop from "../ScrollTop"
 
 function PostThree() {
   return (
     <>
+      <ScrollToTop />
       <div className="grid grid-cols-auto grid-flow-row bg-black text-white pt-4">
         <div className="grid grid-cols-auto grid-flow-cols">
           <div className=" p-6 pt-50 grid text-left gap-4 bg-contain bg-center">
