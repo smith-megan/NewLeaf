@@ -21,7 +21,7 @@ function Gallery() {
               <p className="font-work text-sm">{Gallery.blurb}</p>
             </div>
             <button
-              className="w-5 h-7 bg-black text-white justify-self-end p-0"
+              className="w-5 h-7 bg-black text-white justify-self-end p-0 cursor-pointer"
               onClick={() => {
                 setVisible(false)
               }}
