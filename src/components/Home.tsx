@@ -1,4 +1,3 @@
-// import { useState } from "react"
 import { Link } from "react-router"
 import grain from "../assets/grain.jpg"
 import trees from "../assets/trees.jpg"
@@ -8,8 +7,6 @@ import wood from "../assets/wood.jpg"
 import "../App.css"
 
 function Home() {
-  // const [count, setCount] = useState(10)
-
   return (
     <>
       <div className="grid bg-black text-white sm:grid-cols-3">
@@ -78,7 +75,7 @@ function Home() {
               alt="Wood stack of lumber"
             />
             <Link to="/tutorials" className="font-[400]">
-              Blog & Tutorials +
+              Tutorials +
             </Link>
           </div>
           <div className="grid grid-cols-1 place-items-center gap-2 p-3">
@@ -89,7 +86,7 @@ function Home() {
               alt="Wood industrial style table"
             />
             <Link to="/gallery" className="font-[400] text-black">
-              Inspiration +
+              Gallery +
             </Link>
           </div>
           <div className="grid grid-cols-1 place-items-center gap-2 p-3">

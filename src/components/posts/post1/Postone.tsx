@@ -1,5 +1,5 @@
-import ScrollToTop from "../ScrollTop"
-import Tutorialone from "./Tutorialone"
+import TutorialOne from "./TutorialOne"
+import ScrollToTop from "../../ScrollTop"
 
 function PostOne() {
   return (
@@ -15,7 +15,7 @@ function PostOne() {
       </div>
       <div className="grid sm:p-3 gap-2 bg-white text-black">
         <div className="flex flex-col sm:p-5">
-          {Tutorialone.map((value, i) => (
+          {TutorialOne.map((value, i) => (
             <div className="flex flex-col p-5" key={"tutorialone-div" + i}>
               <div className="flex flex-row justify-around w-full">
                 {value.images.map((img) => {

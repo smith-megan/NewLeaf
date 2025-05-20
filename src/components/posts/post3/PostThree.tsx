@@ -1,5 +1,5 @@
 import TutorialThree from "./TutorialThree"
-import ScrollToTop from "../ScrollTop"
+import ScrollToTop from "../../ScrollTop"
 
 function PostThree() {
   return (

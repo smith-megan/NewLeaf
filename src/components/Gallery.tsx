@@ -2,6 +2,7 @@ import grain from "../assets/grain.jpg"
 import Gallerylist from "./showroom/Showroomlist"
 import { useState } from "react"
 import { PieceInterface } from "./showroom/Showroomlist"
+import ScrollToTop from "./ScrollTop"
 
 function Gallery() {
   const [Visible, setVisible] = useState(false)
@@ -13,6 +14,7 @@ function Gallery() {
 
   return (
     <>
+      <ScrollToTop />
       {Visible === true ? (
         <div className="fixed grid w-[80%] left-[50%] translate-x-[-50%] p-5 pt-4 bg-white text-black">
           <div className="flex justify-around align-middle pb-2">

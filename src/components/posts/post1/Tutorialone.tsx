@@ -13,6 +13,21 @@ const Tutorialone = [
     ],
   },
   {
+    images: [],
+    header: "Your lungs first",
+    paragraphs: [
+      "Sanding, scraping or using chemicals is likely to put particles up in the air so be sure to wear masks or filters for your lungs and work in a well ventilated and open area for any fumes. You can restore and replace furniture, not so with your lungs!",
+    ],
+  },
+  {
+    images: [],
+    header: "Scrape or Chemical strip",
+    paragraphs: [
+      "Scraping will remove larger amounts of the material but should be practiced with caution as uneven scraping can lead to gouging and extra care around edges and woodgrain direction should be practiced as pulling up chunks of wood is a heartbreaking experience.",
+      "There are options to use chemicals to fight through tough layers of paint and polyurethane but these can be messy and sometimes deeply stain or soak into the wood grain underneath. Well worth another read of directions before using!",
+    ],
+  },
+  {
     images: [oops1, oops2],
     header: "A word of caution",
     paragraphs: [
