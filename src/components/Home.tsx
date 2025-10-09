@@ -1,5 +1,9 @@
 import { Link } from "react-router"
-import grain from "../assets/grain.jpg"
+import r from "../assets/showroomphoto/r.jpg"
+// import g from "../assets/showroomphoto/g.jpg"
+// import h from "../assets/showroomphoto/h.jpg"
+import logo from "../assets/logo.svg"
+// import grain from "../assets/grain.jpg"
 import trees from "../assets/trees.jpg"
 import table from "../assets/table.jpg"
 import roundtable from "../assets/roundtable.jpg"
@@ -9,22 +13,28 @@ import "../App.css"
 function Home() {
   return (
     <>
-      <div className="grid bg-black text-white sm:grid-cols-3">
-        <div className="text-3xl text-left pl-6 pb-7 grid gap-3 pt-60 sm:col-span-2">
-          <h1 className="font-forum font-[300] text-4xl">New Leaf Furniture</h1>
-          <h2 className="font-work text-lg pt-3 pb-3">
-            Creative Refinishing and Custom Wood Working
-          </h2>
+      <div className="grid pt-8 bg-black text-white sm:grid-cols-10">
+        <div className="text-3xl text-left pl-5 pb-5 md:pl-20 md:pb-20 grid gap-3 pt-60 sm:col-span-4">
+          <img src={logo} className="w-1/10 pt- 10 pb-5" />
+          <h1 className="font-forum font-[300] text-5xl">New Leaf</h1>
+          <h1 className="font-forum font-[300] text-5xl">Furniture</h1>
+          <div className="pt-5 pb-5">
+            <h2 className="font-work text-2xl">Creative Refinishing</h2>
+            <h2 className="font-work text-2xl">
+              Inspiration, Guides, and Tools
+            </h2>
+          </div>
+
           <Link
-            to="/gallery"
-            className="p-3 bg-white text-black font-work text-lg font-[400] sm:w-1/2 text-center sm:text-left"
+            to="/tutorials"
+            className="p-3 bg-white text-black font-work text-lg font-[400] w-1/2 md:w-1/4 text-center sm:text-left"
           >
-            View the Gallery
+            Start Here
           </Link>
         </div>
         <div
-          className="grid w-full h-full rounded-none sm:rounded-l-lg p-10 pb-40 sm:bg-cover bg-contain bg-center align-left"
-          style={{ backgroundImage: `url(${grain})` }}
+          className="grid w-full sm:h-full h-[350px] rounded-none sm:rounded-t-full sm:col-span-5 sm:col-start-5 sm:bg-cover bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${r})` }}
         ></div>
       </div>
       <div
