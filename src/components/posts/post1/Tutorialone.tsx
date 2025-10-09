@@ -3,13 +3,28 @@ import image2 from "../../../assets/tutorialphoto/one/PXL_20250306_205836586.MP.
 import oops1 from "../../../assets/tutorialphoto/one/oops.jpg"
 import oops2 from "../../../assets/tutorialphoto/one/oops2.jpg"
 
-const Tutorialone = [
+const TutorialOne = [
   {
     images: [image2, image1],
     header: "Before you start",
     paragraphs: [
       "Before you touch a sheet of sandpaper it is first important to really look at what you are working with. Medium Density Fiberboard (MDF) will never sand down into a smooth clean woodgrain!",
       "Take a look and evaluate, if it's a thick layer of polyurethane you should step back to scraping or using a chemical stripper to remove that layer because it will take the sandpaper so much time to remove it.",
+    ],
+  },
+  {
+    images: [],
+    header: "Your lungs first",
+    paragraphs: [
+      "Sanding, scraping or using chemicals is likely to put particles up in the air so be sure to wear masks or filters for your lungs and work in a well ventilated and open area for any fumes. You can restore and replace furniture, not so with your lungs!",
+    ],
+  },
+  {
+    images: [],
+    header: "Scrape or Chemical strip",
+    paragraphs: [
+      "Scraping will remove larger amounts of the material but should be practiced with caution as uneven scraping can lead to gouging and extra care around edges and woodgrain direction should be practiced as pulling up chunks of wood is a heartbreaking experience.",
+      "There are options to use chemicals to fight through tough layers of paint and polyurethane but these can be messy and sometimes deeply stain or soak into the wood grain underneath. Well worth another read of directions before using!",
     ],
   },
   {
@@ -32,4 +47,4 @@ const Tutorialone = [
   },
 ]
 
-export default Tutorialone
+export default TutorialOne

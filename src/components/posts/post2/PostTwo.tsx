@@ -1,5 +1,5 @@
 import TutorialTwo from "./TutorialTwo"
-import ScrollToTop from "../ScrollTop"
+import ScrollToTop from "../../ScrollTop"
 
 function PostTwo() {
   return (
