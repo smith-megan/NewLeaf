@@ -3,7 +3,7 @@ import image2 from "../../../assets/tutorialphoto/one/PXL_20250306_205836586.MP.
 import oops1 from "../../../assets/tutorialphoto/one/oops.jpg"
 import oops2 from "../../../assets/tutorialphoto/one/oops2.jpg"
 
-const Tutorialone = [
+const TutorialOne = [
   {
     images: [image2, image1],
     header: "Before you start",
@@ -47,4 +47,4 @@ const Tutorialone = [
   },
 ]
 
-export default Tutorialone
+export default TutorialOne

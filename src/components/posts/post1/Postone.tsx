@@ -1,4 +1,4 @@
-import TutorialOne from "./TutorialOne"
+import TutorialOne from "./Tutorialone"
 import ScrollToTop from "../../ScrollTop"
 
 function PostOne() {
